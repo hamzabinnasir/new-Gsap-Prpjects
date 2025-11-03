@@ -1,0 +1,118 @@
+@font-face{
+    font-family: Font1;
+    src: url(assets/fonts/cardinalfruitweb-italic.ttf);
+}
+@font-face{
+    font-family: Font2;
+    src: url(assets/fonts/cardinalfruitweb-regular.ttf);
+}
+@font-face{
+    font-family: Font3;
+    src: url(assets/fonts/FoundersGroteskCondensed-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Main */
+#main {
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main h1 ,#main h1 span{
+    font-weight: 100;
+    font-size: 5vw;
+}
+
+#main h1{
+    font-family: Font2;
+}
+
+#main h1 span{
+    font-family: Font1;
+}
+
+/* Page1 */
+.page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.head{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 27vw;
+    color: #222;
+    font-family: Font3;
+}
+
+/* Top , Bottom and Center */
+.top,
+.bottom {
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.top {
+    top: 0px;
+}
+
+.top h1 {
+    top: 100%;
+}
+
+.bottom h1 {
+    top: 0%;
+}
+
+.bottom {
+    bottom: 0px;
+}
+
+/* Center */
+.center {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center h1 , .center h1 span{
+    color: #fff;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 100;
+}
+
+.center h1{
+    font-family: Font2;
+}
+
+.center h1 span{
+    font-family: Font1;
+}

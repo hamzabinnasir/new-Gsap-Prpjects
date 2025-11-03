@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Main */
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* Left and Right */
+.right{
+    flex: 4;
+}
+
+.left{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 5%;
+}
+
+.left h1{
+    font-size: 60px;
+    color: #E9384A;
+}
+
+.left h3{
+    font-weight: bold;
+    font-size: 25px;
+}

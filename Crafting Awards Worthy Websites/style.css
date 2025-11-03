@@ -1,0 +1,350 @@
+@font-face {
+    font-family: font1;
+    src: url(fonts/29ff06a0e0f64df2-s.p.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+#header {
+    height: 100%;
+    width: 100%;
+}
+
+/* Header */
+#header{
+    background-image: url(img/intro-poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar */
+#navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index:99;
+}
+
+#navbar .part1,
+.part2 {
+    padding: 0px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 110px;
+}
+
+.part1 {
+    height: 55px;
+    background-color: #ffff;
+}
+
+.part2 {
+    height: 50px;
+    background-color: #222
+}
+
+/* Burger toggle (hidden on desktop by default) */
+#menuToggle{
+    display: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Burger toggle removed */
+
+/* List Containers */
+.listContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* part1 */
+.part1 ul {
+    gap: 20px;
+}
+
+.part1 ul li a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    font-size: 21px;
+    cursor: pointer;
+    color: #444;
+}
+
+/* Part 2 */
+.part2 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* start div */
+.start {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#anchor {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.home {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.part2 ul {
+    gap: 20px;
+}
+
+/* Part 2 Anchors */
+.part2 li a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.part2 ul li #featured1 {
+    background: linear-gradient(to right, rgb(50, 50, 50), #999);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 200;
+}
+
+.part2 ul li #featured2 {
+    background: linear-gradient(to right, #999, rgb(50, 50, 50));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 200;
+}
+
+#discover{
+    color: rgb(255, 183, 0);
+}
+
+#regular{
+    color: #999;
+}
+
+/* BUy Button */
+#buyBtn{
+    background-color: rgb(255, 183, 0);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-size: 11px;
+    /* font-weight: bold; */
+    border: 1px solid rgb(255, 183, 0);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#buyBtn:hover {
+    background-color: #000000;
+    color: #ffff;
+}
+
+
+/* Page2 */
+.textContainer{
+    color: #dadada;
+}
+
+#page2{
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnAndPara{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 12px;
+}
+
+/* buyBtn2 */
+#buyBtn2{
+    background-color: rgb(255, 183, 0);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: black;
+    /* font-weight: bold; */
+    border: 1px solid rgb(255, 183, 0);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#buyBtn2:hover {
+    background-color: #000000;
+    color: #ffff;
+}
+
+/* icon and para */
+.iconAndPara{
+    display: flex;
+    align-items: end;
+    gap: 4px;
+}
+
+.iconAndPara p{
+    font-size: 10px;
+}
+
+/* _______Animation_______ */
+/* #page3 */
+#page3{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page3 canvas{
+    /* max-width: 100vw;
+    max-height: 100vh; */
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* Mobile menu panel */
+#mobileMenu{
+    position: fixed;
+    top: 105px;
+    left: 0;
+    right: 0;
+    background: #0f0f0f;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 9;
+}
+
+#mobileMenu.open{ max-height: 70vh; }
+
+#mobileMenu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+}
+
+#mobileMenu ul li a{ font-size: 14px; color: #ddd; }
+
+.mobile-cta{ padding: 0 16px 16px 16px; }
+
+#buyBtnMobile{
+    background-color: rgb(255, 183, 0);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 9px 16px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid rgb(255, 183, 0);
+}
+
+/* ------------------ Responsive ------------------ */
+/* Large tablets and down */
+@media (max-width: 1024px) {
+    .part1 ul { gap: 12px; }
+    .part2 ul { gap: 12px; }
+    #logo{ width: 90px; }
+    .icon { font-size: 18px; }
+}
+
+/* Tablets and down */
+@media (max-width: 768px) {
+    #navbar .part1,
+    .part2 { padding: 0px 4%; }
+
+    .part1 { height: 50px; }
+    .part2 { height: 48px; }
+
+    /* Hide wide menus, reveal burger */
+    .part1 ul { display: none; }
+    .icons { display: none; }
+    .part2 ul { display: none; }
+    #menuToggle{ display: inline-flex; align-items: center; justify-content: center; }
+
+    #buyBtn { padding: 7px 14px; font-size: 12px; }
+
+    /* Page2 text and buttons */
+    .textContainer p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    .btnAndPara{ flex-wrap: wrap; gap: 10px; margin-top: 12px; padding: 0 16px; }
+    #buyBtn2{ font-size: 12px; padding: 8px 16px; }
+    .iconAndPara p{ font-size: 12px; }
+
+    #page3 canvas{ height: 90vh; }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    #logo{ width: 80px; }
+    #header{ background-position: center top; }
+    .part1 { height: 46px; }
+    .part2 { height: 44px; }
+
+    #page2{ height: auto; padding: 80px 0 40px; }
+    .textContainer p{ font-size: 13px; }
+    #buyBtn2{ font-size: 11px; padding: 8px 14px; }
+    .iconAndPara p{ font-size: 11px; }
+
+    #page3 canvas{ height: 75vh; }
+}

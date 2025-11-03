@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Header Sectiion */
+#headerSection {
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    padding: 0px 5%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 1.1;
+    transition: 0.3s ease;
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+/* Contact Btn */
+.contactBtn {
+    border: 2px solid #ffff;
+    background-color: transparent;
+    color: #ffff;
+    padding: 12px 24px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bolder;
+    outline: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.contactBtn:hover {
+    background-color: #ffff;
+    color: #111111;
+}
+
+/* Logo */
+#logo {
+    background: -webkit-linear-gradient(90deg, #ee128f, #f3111c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+/* Container */
+.container {
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+/* Left Part of Container */
+.left {
+    flex: 2;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    font-size: 45px;
+}
+
+/* Buttons Container */
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Animation Button */
+.btn {
+    padding: 12px 32px 12px 22px;
+    border: none;
+    outline: none;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    color: #ffff;
+    z-index: 1;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: -webkit-linear-gradient(45deg, #ee128f, #f3111c);
+    /* transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1) 0s; */
+    transition: 0.5s ease-in;
+    transform: skew(-20deg);
+    /* transform-origin: bottom left; */
+    z-index: -1;
+    /* Button ke befor ka z index -1 or button ka z index 1 zaroor dena hai */
+    border-radius: 5px;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
+/* Widgets Container */
+.widgetsContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Widget */
+.widget {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#red {
+    background: -webkit-linear-gradient(90deg, #ee128f, #f3111c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+
+/* Right Container */
+.right {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(90deg, #ee128f, #f3111c);
+    box-shadow: 0 0 0 30px rgb(33, 33, 33);
+    margin-top: 150px;
+}
+
+
+/* Nft Image */
+#nftImg {
+    position: absolute;
+    bottom: 0px;
+    width: 450px;
+}
+
+
+/* Animated Cirlcle Text */
+.circleText{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    transform: translate(-52% , -50%);
+    color: #ffff;
+}
+
+.text{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.dot{
+    height: 8px;
+    width: 8px;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+}
+
+.text span{
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 60px;
+    font-size: 10px;
+}

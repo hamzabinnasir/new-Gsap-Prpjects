@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="star" src="./img/star.png" alt="">
+                <div>Frost Inv.</div>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>  
+    
+    <section class="section-one">
+        <div class="container">
+            <div class="left-side">
+                <div class="title">
+                    <h1>get gold &
+                         <img src="./img/star.png" alt="" class="star">
+                          <br> silver deliverd <br> to your door</h1>
+                </div>
+
+                <p class="p">
+                    Gold and silver have intrinsic value and adds
+                    diversification to your portfolio.
+                    We help investors narrow thier decision 
+                    down to either buying dold or silver bullion bars or coins
+                </p>
+
+                <button>know more</button>
+
+            </div>
+            <div class="right-side pyramid">
+                <img src="./img/gold.png" alt="" class="gold glow image">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="left-side hand">
+                <img class="gold image" src="./img/gold2.png" alt="">
+            </div>
+            <div class="right-side">
+                <img src="./img/star.png" class="star star-s2" alt="">
+                <div class="title">
+                    <h1>Investing for <br> the long term</h1>
+                    <h2>Reasons for investing</h2>
+                </div>
+
+                <p class="p">
+                    People often choose gold bullion as an long term investment.
+                    Silver generally follows gold in terms of relative values, and in the past decade, 
+                   gold hasdemonstrated a steady overall annual profit.
+                </p>
+
+                <div class="line"></div>
+
+                <p class="p">
+                    They can be traded in the short and medium term, gold & 
+                    silver prices move in the markets.
+                </p>
+                <button>see directions</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="left-side">
+                <div class="title">
+                    <h1>Timing og gold & <br> silver prices</h1>
+                    <h2>An unstoppable duo</h2>
+                </div>
+                <div class="type g-type">
+                    <p>Gold</p>
+                    <p>Gold is seen as a hedge against inflation and a store of value through 
+                    thick and through thin.</p>
+                </div>
+
+                <div class="line line-blue"></div>
+
+                <div class="type s-type">
+                    <p>Silver</p>
+                    <p>
+                        Silver prices are much more `volatile` than those of gold 
+                      in the short term.
+                    </p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="right-side rotation">
+                <img class="gold3 image" src="./img/gold3.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="left-side">
+                <img src="./img/star.png" class="star-s4 star" alt="">
+                <div class="title">
+                    <h1>3 direction</h1>
+                    <h2>Choose your gold</h2>
+                </div>
+            </div>
+            <div class="right-side">
+                <p>
+                    The fineness of gold depends on the amount of ligature - additional metals. 
+                    For example, yellow gold 585* is a metal with the addition 
+                    of 28% silver and 113.5% copper.
+                </p>
+
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card card-1">
+                <div class="rotation">
+                    <img src="./img/card-1.png" alt="" class="img-card image">
+                </div>
+                <div class="color">yellow</div>
+                <span>585 standard gold</span>
+            </div>
+            <div class="card card-2">
+                <div class="rotation">
+                    <img src="./img/card-2.png" alt="" class="img-card image">
+                </div>
+                <div class="color">white</div>
+                <span>585 standard gold</span>
+            </div>
+            <div class="card card-3">
+                <div class="rotation">
+                    <img src="./img/card-3.png" alt="" class="img-card image">
+                </div>
+                <div class="color">pink</div>
+                <span>750 standard gold</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="container" style="padding-bottom:5rem;">
+            <img src="./img/star.png" alt="" class="star star-s5">
+            <div class="left-side">
+                <div class="title">
+                    <h1>stay up-to date</h1>
+                    <h2>With everything precious metals</h2>
+                </div>
+            </div>
+            <div class="right-side">
+                <p class="txt">
+                    Replenish <span>your portfolio</span>
+                    with gold and silver <span>to diversity</span>
+                    your investment portfolio.
+                </p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="container sides">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="./img/star.png" class="star" alt="">
+                    <div>Frost Inv.</div>
+                </div>
+
+                <p class="p">
+                    We are based in Los Angeles, USA.<br>
+                    our motto is -investing in knowledge <br>
+                    pays the best dividends.
+                </p>
+            </div>
+            <div class="right-side">
+                <ul class="menu">
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">company</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">client</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">support</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">jobs</a></li>
+                    <li><a href="#">docs</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="left-side">
+                <p> &copy; copyright 2022 . All rights reserved</p>
+            </div>
+            <div class="right-side center">
+                <p>Term and Conditions</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" ></script>
+<script src="./script.js"></script>
+</html>
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bm;
+    src: url(./font/BlackMango-Black.otf);
+}
+
+h1{
+    font-family: bm;
+}
+
+body{
+    background: url(./img/stars-bg.png);
+    color: rgb(184, 182, 182);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    /* font-size: 18px; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo .star{
+    width: 14px;
+    object-fit: cover;
+    margin-right: 4px;
+}
+
+.menu-items{
+    display: flex;
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    transition: .3s ease;
+}
+
+a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+section{
+    height: 100vh;
+    padding: 3rem;
+}
+
+.section-one{
+    height: calc(100vh - 85px);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.gold{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+.title{
+    line-height: 1.2;
+}
+.title h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.title .star{
+    width: 40px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 400px;
+}
+
+.p{
+    padding: 2rem 0;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, 
+    #2B32B2 , #1488CC
+    );
+    color: #fff;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button::after{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: '\e098';
+    margin-left: 1rem;
+}
+
+button:hover{
+    background: linear-gradient(to right, #121772, #075886);
+}
+
+.glow{
+    filter: drop-shadow(-20px 0px 1.75em rgb(81,147,194));
+}
+
+
+.right-side{
+    justify-self: flex-end;
+}
+
+.title h2{
+    font-size: 24px;
+    opacity: .5;
+}
+
+.line{
+    width: 100%;
+    background-color: rgb(184, 182, 182);
+    height: 2px;
+    margin-top: 1rem;
+}
+
+.gold3{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.type{
+    padding: 1rem 0;
+}
+
+.type :first-child{
+    font-size: 18px;
+}
+
+.g-type{
+    color: #0152fc;
+}
+
+.line-blue{
+    background-color: #0152fc;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.card{
+    /* background-color: #0152fc; */
+    width: 28%;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+.img-card{
+    max-width: 350px;
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.card-1{
+    background: linear-gradient(to right,
+    #545d60 , #283048
+    );
+}
+.card-2{
+    background: linear-gradient(to right,
+    #4b485a , #1f1c2c
+    );
+}
+.card-3{
+    background: linear-gradient(to right,
+    #3f4c6b , #535e79
+    );
+}
+
+.card:hover{
+    background: linear-gradient(to left,
+    #3a7bd5, #00d2ff
+    );
+}
+
+
+.color{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.card span{
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #fff;
+}
+
+.card:hover .color{
+    color: #fff;
+}
+
+.txt{
+    font-size: 24px;
+}
+
+.txt span{
+    color: #0152fc;
+}
+
+.sides{
+    padding-top: 5rem;
+}
+
+.menu{
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu li{
+    width: 30%;
+}
+
+.footer-section{
+    height: auto;
+}
+
+footer{
+    padding: 3rem;
+}
+
+.center{
+    justify-self: center;
+}
+
+.star-s2{
+    position: absolute;
+    width: 65px;
+    right: -2%;
+}
+
+.star-s4{
+    width: 65px;
+    position: absolute;
+    left: -2%;
+    margin-top: 2.5rem;
+}
+
+.star-s5{
+    position: absolute;
+    left: 40%;
+    width: 40px;
+}
+
+.image{
+
+    animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}

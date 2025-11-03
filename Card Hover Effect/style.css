@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* main */
+#main {
+    min-height: 100svh;
+    width: 100%;
+    background-color: #055EE4;
+}
+
+/* Card Div */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    /* ***reminder*** */
+    /* perspective: 1000px;
+    perspective-origin: center center; */
+}
+
+/* card */
+.card {
+    height: 60vh;
+    width: clamp(220px, 20vw, 360px);
+    background-color: #ffff;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) , 0.5s;
+    pointer-events: none;
+    /* ***reminder*** */
+    transform-origin: center;
+}
+
+/* Card 1 */
+#card1 {
+    z-index: 5;
+    transform: perspective(1000px) rotateY(-30deg) translateX(-110%);
+    /* ***reminder*** */
+    /* transform:rotateY(-30deg) translateX(-110%); */
+}
+
+#card1 img {
+    width: 89%;
+}
+
+/* Card 2 */
+#card2 {
+    flex-direction: column;
+    z-index: 3;
+    rotate: -4deg;
+}
+
+#card2 img {
+    width: 80%;
+}
+
+#vd1 {
+    width: 80%;
+}
+
+/* Card 3 */
+#card3 {
+    flex-direction: column;
+    z-index: 2;
+    rotate: 4deg;
+}
+
+#card3 img {
+    width: 80%;
+}
+
+#vd2 {
+    width: 80%;
+}
+
+
+/* Container Section */
+.container {
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+}
+
+/* Right part */
+.right {
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Left part */
+.left {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Cirlce div */
+.circle {
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+}
+
+/* float left */
+.float-lft {
+    right: -150%;
+    background-color: #FAEE12;
+}
+
+/* float right */
+.float-rght {
+    left: -150%;
+    background-color: #2883FF;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .card {
+        height: 52vh;
+        width: clamp(220px, 26vw, 340px);
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        height: 48vh;
+        width: clamp(220px, 34vw, 340px);
+    }
+    #card1 {
+        transform: perspective(900px) rotateY(-24deg) translateX(-95%);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        top: 52%;
+    }
+    .card {
+        height: 44vh;
+        width: 72vw;
+    }
+    #card1 {
+        transform: perspective(800px) rotateY(-18deg) translateX(-75%);
+    }
+    #card2 {
+        rotate: -2deg;
+    }
+    #card3 {
+        rotate: 2deg;
+    }
+}
+
+@media (max-width: 560px) {
+    .card {
+        height: 40vh;
+        width: 82vw;
+        border-radius: 16px;
+    }
+    #card1 {
+        transform: perspective(700px) rotateY(-12deg) translateX(-55%);
+    }
+    #card2 img,
+    #card3 img,
+    #vd1,
+    #vd2 {
+        width: 86%;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        height: 36vh;
+        width: 88vw;
+        border-radius: 14px;
+    }
+    #card1 {
+        transform: perspective(640px) rotateY(-8deg) translateX(-40%);
+    }
+}

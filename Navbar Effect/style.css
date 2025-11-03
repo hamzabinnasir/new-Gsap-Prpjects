@@ -1,0 +1,50 @@
+@font-face{
+    font-family: Significo1;
+    src: url(fonts/significoFont3.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    font-family: Significo1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* main */
+#main {
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxContainer {
+    width: 200px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.box {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    /* *** reminder *** */
+    overflow: visible;
+}
+
+.box span {
+    font-size: 15px;
+}

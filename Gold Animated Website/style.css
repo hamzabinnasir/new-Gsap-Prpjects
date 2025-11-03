@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    padding: 0px 6%;
+    background: url(images/stars-bg.png);
+    background-position: center;
+    background-size: cover;
+    color: #ffff;
+}
+
+/* HEADER */
+#header{
+    height: 100%;
+    width: 100%;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar li h4{
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+/* Logo Container */
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.logoContainer h4{
+    font-size: 12px;
+}
+
+/* Logo */
+#logo{
+    width: 15px;
+}
+
+/* HERO SECTION */
+.heroSection{
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Hero Section Right Side */
+
+.rightSide{
+    z-index: -1;
+}
+
+.rightSide img{
+    width: 400px;
+}
+
+
+/* Hero Section Left Side */
+.leftSide p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.leftSide h1{
+    line-height: 45px;
+    font-size: 40px;
+}
+
+/* CTA Button */
+.ctaBtn{
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: linear-gradient(to right, 
+    #2B32B2 , #1488CC
+    );
+    font-size: 12px;
+    color: #ffff;
+    font-family: "Poppins" , sans-serif;
+}
+
+/* CTA Button arrow */
+#arrow{
+    margin-left: 12px;
+}
+
+
+/* SECTION TWO */
+#section2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Section 2 Left Side */
+.sec2leftSide img{
+    width: 400px;
+}
+
+
+/* Section Right Side */
+.sec2RightSide p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.sec2RightSide h1{
+    line-height: 45px;
+    font-size: 40px;
+}
+
+.sec2RightSide h3{
+    color: #5F5F5F;
+    margin-top: 3px;
+}
+
+/* line div */
+.line{
+    width: 100%;
+    border: 1px solid #ffff;
+    margin-top: 32px;
+}
+
+
+
+/* SECTION THREE */
+#section3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+
+/* Section Three left side */
+.sec3LeftSide{
+    flex: 6;
+}
+
+.sec3RightSide{
+    flex: 4;
+}
+
+.sec3LeftSide h1{
+    line-height: 45px;
+    font-size: 40px;
+}
+
+.sec3LeftSide h3{
+    color: #5F5F5F;
+    margin-top: 3px;
+}
+
+.sec3LeftSide h4{
+    margin-top: 20px;
+}
+
+.sec3LeftSide p{
+    font-size: 12px;
+}
+
+
+/* blue Heading */
+.blueHead{
+    color: #1E266F;
+}
+
+/* blue Paragraph */
+.bluePara{
+    color: #1E266F;
+}
+
+/* blue div */
+.blue{
+border: 2px solid #1E266F;
+}
+
+/* Section Three Right Side */
+.sec3RightSide img{
+    width: 300px;
+}
+
+
+
+
+/* SECTION FOUR */
+#section4{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+/* Section 4 Context Wrapper */
+.sec4ContextWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Section 4 context */
+.sec4Context h1{
+    font-size: 40px;
+}
+
+.sec4Context h3{
+    color: #5F5F5F;
+}
+
+.paraAndLine .line{
+    margin-top: 10px;
+}
+
+
+/* Para and line div */
+.paraAndLine p{
+    font-size: 12px;
+}
+
+
+/* Section 4 Cards Container */
+.cardsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Section 4 Card */
+.sec4Card{
+    position: relative;
+    background-color: #293044;
+    border-radius: 5px;
+    padding: 18px;
+}
+
+/* Image Div */
+.imgDiv{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4Card img{
+    width: 200px;
+}
+
+
+
+
+/* SECTION FIVE */
+#section5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#section5 .line{
+    margin-top: 70px;
+}
+
+/* section5Container */
+.section5Container{
+    display: flex;
+    margin-top: 20px;
+    margin-top: 70px;
+}
+
+
+.sec4ContextWrapper h4 span{
+    color: #1E266F;
+}
+
+/* Section5 logo container */
+.logoContainerWrapper p{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.logoContainerWrapper{
+    flex: 6.5;
+}
+
+
+/* Section 5 list containers */
+.listContainer{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    flex: 3.5;
+}
+
+.listContainer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.listContainer li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    padding: 32px 0px;
+}
+
+footer p{
+    font-size: 12px;
+    color: #999;
+}
+
+.p1{
+    flex: 6.5;
+}
+
+.p2{
+    flex: 3.5;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Fanta Website</title>
+</head>
+
+<body>
+    <div id="main">
+        <nav id="navbar">
+            <h2>Logo</h2>
+            <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Shop</li>
+                <li>Contact</li>
+            </ul>
+            <i class="ri-menu-fill"></i>
+        </nav>
+
+        <!-- Page1 -->
+        <div class="page1">
+            <h1>fanta</h1>
+            <img id="fantaCan" src="assets/images/fanta.png" alt="no img">
+            <img id="orange" src="assets/images/orange.webp" alt="no img">
+            <img id="slice" src="assets/images/orange2.png" alt="no img">
+            <img id="coconutLeaf" src="assets/images/coconoutleaf.png" alt="no img">
+            <img id="leaf" src="assets/images/leaf2.png" alt="no img">
+            <img id="leaf2" src="assets/images/leaf.webp" alt="no img">
+        </div>
+
+        <!-- Page2 -->
+        <div class="page2">
+            <div class="left">
+                <svg id="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#e04428" d="M45,-62C52.2,-56.8,47.4,-35.4,49.7,-18.5C51.9,-1.6,61.2,10.6,62.8,25C64.4,39.3,58.4,55.7,46.6,64.8C34.9,74,17.5,75.8,-0.9,77C-19.2,78.2,-38.3,78.7,-50,69.5C-61.6,60.3,-65.7,41.5,-68.4,24.3C-71.1,7.1,-72.5,-8.4,-69.4,-24C-66.3,-39.5,-58.7,-55,-46.4,-58.4C-34.1,-61.9,-17.1,-53.4,1,-54.7C19,-56,37.9,-67.2,45,-62Z" transform="translate(100 100)" />
+                  </svg>
+            </div>
+            <div class="right">
+                <h1>Flavour Updated</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, esse temporibus facilis ad sequi doloribus at debitis labore vero eos ducimus voluptatem accusamus cumque quasi veniam ex voluptas quibusdam voluptatum quod ipsa nemo expedita enim? Sapiente aliquam placeat debitis minima architecto expedita tempore ullam possimus tenetur rerum ipsam quasi fuga delectus ex, necessitatibus ad, animi natus quo esse distinctio eius, sit id? Alias molestias pariatur, in soluta mollitia laboriosam laudantium nisi deleniti, labore ex maiores exercitationem voluptatibus. Laudantium exercitationem accusantium incidunt corporis quisquam aliquid delectus quaerat officiis veritatis nesciunt veniam numquam, earum temporibus error harum pariatur expedita ab id perferendis.</p>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page3">
+            <div class="box box1">
+                <div class="imgBox imgBox1">
+                    <img id="cola" class="img" src="assets/images/cocacola.png" alt="no img">
+                    <img class="lemon1" id="lemon" src="assets/images/lemon.webp" alt="no img">
+                </div>
+                <h1>CocaCola</h1>
+                <button id="buyBtn">Buy Now</button>
+            </div>
+            <div class="box box2">
+                <div class="imgBox imgBox2"></div>
+                <h1>Fanta</h1>
+                <button id="buyBtn">Buy Now</button>
+            </div>
+            <div class="box box3">
+                <div class="imgBox imgBox3">
+                    <img id="pepsi" class="img" src="assets/images/pepsi.png" alt="no img">
+                    <img class="lemon2" id="lemon" src="assets/images/lemon.webp" alt="no img">
+                </div>
+                <h1>Pepsi</h1>
+                <button id="buyBtn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
+
+<script src="script.js"></script>
+<!-- Note : "Glassmorphism website for transparent glass colors"
+Lenis website ka cdn copy krne ki bjay ham un elements pr transition bhi dal sakte hain jin ko ham ne scroll trigger pr animate krwaya hai. -->
+</html>

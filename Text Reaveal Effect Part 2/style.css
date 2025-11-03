@@ -1,0 +1,76 @@
+@font-face{
+    font-family: Jarvis;
+    src: url(assets/fonts/Jarvis.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    font-family: Jarvis;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* Main */
+#main{
+    height: 100vh;
+    width: 100%;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 3%;
+    font-weight: bold;
+}
+
+#navbar li{
+    font-size: 14px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#nav-Head{
+    font-size: 22px;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#bigHead{
+    font-size: 100px;
+    text-align: center;
+    font-size: 200;
+}
+
+/* Container */
+.container{
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Cloud Img */
+#cloudImg{
+    width: 150%;
+    position: absolute;
+    top: 50%;
+}

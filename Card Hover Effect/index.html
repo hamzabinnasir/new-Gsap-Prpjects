@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Card Hover Effect</title>
+</head>
+
+<body>
+    <div id="main">
+        <!-- Card Section -->
+        <div class="cards">
+            <div id="card1" class="card">
+                <img src="images/img1.png" alt="no img">
+            </div>
+            <div id="card2" class="card">
+                <img src="images/2.png" alt="no img">
+                <video id="vd1" src="images/03.mp4" autoplay loop muted></video>
+            </div>
+            <div id="card3" class="card">
+                <img src="images/3.png" alt="no img">
+                <video id="vd2" src="images/04.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+
+        <!-- Container Section -->
+        <div class="container">
+            <div class="left">
+                <div class="float-lft circle"></div>
+            </div>
+            <div class="right">
+                <div class="float-rght circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
+<!-- Note: Agar Akela rotate likhain gay to left ya right side pr rotate kre ga it depends k ham ne kis position pr rotate rwaya hai or agar transform rotateX ya Y krein gay to 3d main rotate ho ga
+
+
+Method_1 in CSS
+.card {
+    /* ***reminder*** */
+    transform-origin: center;
+}
+
+.cards {
+    /* ***reminder*** */
+    /* perspective: 1000px;
+    perspective-origin: center center; */
+}
+
+#card1 {
+    transform: perspective(1000px) rotateY(-30deg) translateX(-110%);
+    /* ***reminder*** */
+    /* transform:rotateY(-30deg) translateX(-110%); */
+}
+
+
+Method_2 in CSS
+.card {
+    /* ***reminder*** */
+    /* transform-origin: center; */
+}
+
+.cards {
+    /* ***reminder*** */
+    perspective: 1000px;
+    perspective-origin: center center;
+}
+
+#card1 {
+    /* transform: perspective(1000px) rotateY(-30deg) translateX(-110%); */
+    /* ***reminder*** */
+    transform:rotateY(-30deg) translateX(-110%);
+}
+-->

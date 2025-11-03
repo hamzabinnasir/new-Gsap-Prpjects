@@ -1,0 +1,201 @@
+@font-face{
+    font-family: Font1;
+    src: url(fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face{
+    font-family: Font2;
+    src: url(fonts/Product\ Sans\ Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #dadada;
+    background-image: repeating-linear-gradient(to right, transparent 0px 100px, #999 100px 101px),
+        repeating-linear-gradient(to bottom, transparent 0px 100px, #999 100px 101px)
+}
+
+/* Responsive base variables */
+:root{
+    --slide-width: 150px;
+    --slide-height: 200px;
+    --radius: 400px;
+    --perspective: 1000px;
+    --tilt-x: -16deg;
+}
+
+/* Main */
+#main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#main::before {
+    background: url(images/bg.png);
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.slider{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: var(--slide-height);
+    width: var(--slide-width);
+    transform: translate( -50% , 0%) perspective(var(--perspective)) rotateX(var(--tilt-x));
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* Animation */
+@keyframes rotate{
+    from{
+        transform: translate( -50% , 0%) perspective(var(--perspective)) rotateX(var(--tilt-x)) rotateY(0deg);
+    }
+    to{
+        transform: translate( -50% , 0%) perspective(var(--perspective)) rotateX(var(--tilt-x)) rotateY(360deg);
+    }
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-origin: center;
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(var(--radius));
+    /* translateZ end pr ay ga or transform-style: preserve-3d parent div ki property hai */
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Content */
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    align-items: center;
+}
+
+.content h1{
+    font-size: 12vw;
+    text-transform: uppercase;
+    color: #202535;
+    font-weight: bolder;
+    position: relative;
+    font-family: Font1;
+    /* isko z-index nahin dena */
+}
+
+.content h1::after{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    /* *** reminder *** */
+    content: attr(data-text);
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Contant Box */
+.contentBox h3{
+    font-family: Font1;
+}
+
+#bold{
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.contentBox p{
+    font-size: clamp(10px, 2.2vw, 14px);
+    text-align: right;
+}
+
+.img{
+    width: 35%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    z-index: 1;
+}
+
+/* Breakpoints */
+@media (max-width: 1200px){
+    :root{
+        --slide-width: 130px;
+        --slide-height: 180px;
+        --radius: 320px;
+    }
+    .img{ width: 40%; top: 30%; }
+}
+
+@media (max-width: 992px){
+    :root{
+        --slide-width: 110px;
+        --slide-height: 160px;
+        --radius: 260px;
+        --perspective: 900px;
+    }
+    .img{ width: 45%; top: 32%; }
+}
+
+@media (max-width: 768px){
+    :root{
+        --slide-width: 90px;
+        --slide-height: 130px;
+        --radius: 210px;
+        --perspective: 850px;
+    }
+    .content{
+        flex-direction: column;
+        gap: 12px;
+        bottom: 10px;
+    }
+    .content h1{ font-size: 18vw; }
+    .contentBox p{ text-align: center; }
+    .img{ width: 55%; top: 34%; }
+}
+
+@media (max-width: 576px){
+    :root{
+        --slide-width: 70px;
+        --slide-height: 100px;
+        --radius: 170px;
+        --perspective: 800px;
+        --tilt-x: -12deg;
+    }
+    .slider{ top: 8%; }
+    .content h1{ font-size: 20vw; }
+    .img{ width: 65%; top: 36%; }
+}

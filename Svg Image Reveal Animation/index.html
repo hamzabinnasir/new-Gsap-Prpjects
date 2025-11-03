@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svg Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Main */
+        #main{
+            height: 100vh;
+            width: 100%;
+            background-color: aquamarine;
+        }
+
+        .svg1 , .svg2{
+            height: 100%;
+            width: 100vw;
+            mask-image: url(images/blob.svg);
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: 0%;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+        }
+
+        .img{
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* *** reminder *** */
+            background-size: 130%;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+        }
+        
+        .img1{
+            background-image: url(images/img1.webp);
+        }
+        .img2{
+            background-image: url(images/img2.avif);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="svg1">
+            <div class="img img1">
+                <div class="svg2">
+                    <div class="img img2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    var tl = gsap.timeline({scrollTrigger : {
+        scroller : "body",
+        trigger : "#main",
+        start : "50% 50%",
+        end :"200% 50%",
+        scrub : true,
+        pin : true,
+    }});
+
+    tl.to(".svg1" , {
+        maskSize : "300%",
+    } , "ha");
+    tl.to(".img1" , {
+        backgroundSize : "100%",
+    } , "ha");
+    tl.to(".svg2" , {
+        maskSize : "300%",
+    } , "ca");
+    tl.to(".img2" , {
+        backgroundSize : "100%",
+    } , "ca");
+</script>
+</html>

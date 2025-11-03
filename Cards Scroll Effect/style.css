@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Font1;
+    src: url(assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Font2;
+    src: url(assets/fonts/Product\ Sans\ Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #202020;
+}
+
+/* Main */
+#main {
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#main h1 {
+    font-family: Font2;
+    text-align: center;
+    margin-top: -10px;
+    font-size: clamp(20px, 4.5vw, 56px);
+}
+
+#main p {
+    font-size: clamp(12px, 2.4vw, 16px);
+    text-align: center;
+    font-family: Font1;
+    color: #888;
+    margin-top: 8px;
+    line-height: 1.5;
+    padding: 0 16px;
+}
+
+#logo {
+    width: clamp(72px, 10vw, 120px);
+}
+
+/* Page1 */
+.page1{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img{
+    width: 70%;
+    max-width: 960px;
+    margin-top: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .img{
+        width: 88%;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img{
+        width: 92%;
+        margin-top: 14px;
+    }
+}

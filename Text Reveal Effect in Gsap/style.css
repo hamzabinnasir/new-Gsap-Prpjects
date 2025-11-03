@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* main */
+.page1 , .page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBox {
+    position: relative;
+}
+
+.text {
+    font-size: 65px;
+    white-space: nowrap;
+}
+
+/* Text1 */
+/* ***reminder*** */
+#text1 span{
+    display: block;
+    overflow: hidden;
+}
+
+#span1{
+    width: 0%;
+}
+
+#span2{
+    width: 0%;
+}
+
+/* Text2 */
+#text2 {
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+}

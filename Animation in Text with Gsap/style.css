@@ -1,0 +1,217 @@
+@font-face {
+    font-family: family1;
+    src: url(assets/fonts//SuisseIntl-Regular.ttf);
+}
+
+@font-face {
+    font-family: family2;
+    src: url(assets/fonts/SuisseIntl-Medium.ttf);
+}
+
+@font-face {
+    font-family: family3;
+    src: url(assets/fonts/SuisseIntl-Semibold.ttf);
+}
+
+@font-face {
+    font-family: zuumeBold;
+    src: url(assets/fonts/Zuume-Bold.ttf);
+}
+
+@font-face {
+    font-family: zuumeSemiBold;
+    src: url(assets/fonts/Zuume-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: zuumeMedium;
+    src: url(assets/fonts/Zuume-Medium.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+/* Main */
+/* #main {
+    height: 100vh;
+    width: 100%;
+} */
+
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 120px;
+    padding: 0px 7%;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+#logo {
+    width: 78px;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    font-size: 16px;
+    font-family: family2;
+}
+
+#navbar li:hover {
+    color: #A9FF5C;
+}
+
+#experiences:hover {
+    background-color: #1E2716;
+}
+
+/* Start Button */
+.start {
+    padding: 16px 27px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    font-family: family2;
+}
+
+.start:hover {
+    color: #fff;
+    background-color: #CB5CFF;
+}
+
+
+.arrow {
+    font-size: 16px;
+    left: 2px;
+    position: relative;
+    top: 2px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Right */
+.right {
+    flex: 2.8;
+    overflow: hidden;
+}
+
+#vd {
+    /* *** reminder *** */
+    /* Height nahin di width di hai or .right ko overflow hidden */
+    width: 160%;
+    /* height: 100%; */
+}
+
+/* Left */
+.left {
+    flex: 3;
+    padding-left: 7%;
+}
+
+.left h1 {
+    position: relative;
+    font-size: 14vw;
+    font-family: zuumeBold;
+    font-weight: bolder;
+    line-height: 120px;
+    color: transparent;
+    -webkit-background-clip: text;
+    /* background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBpNG0yN3RpYnpsenE5YWVrOWU0aWxsY3k1MWo1bnI1dXdsbnlzaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEduWWMHWo4jqkpB6/giphy.gif); */
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExem85bjJ0YzhwdXlla2FiaXE0a253Mmp2MTU0Mno5ejB1eHZyc2xyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKzhOn95qqG5o9W/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.left h1:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 85%;
+    background-color: #0E0E0E;
+    z-index: -1;
+}
+
+.left p {
+    font-family: family1;
+    font-size: 18px;
+    line-height: 26px;
+    color: #999;
+    margin-top: 50px;
+    color: #dadada;
+}
+
+.btnContainer {
+    margin-top: 40px;
+    display: flex;
+    gap: 18px
+}
+
+.cta {
+    padding: 22px 32px;
+    background-color: #A9FF5C;
+    border-radius: 18px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.cta:hover {
+    background-color: #CB5CFF;
+    color: #fff;
+}
+
+.cta1 img {
+    width: 20px;
+}
+
+.cta2 {
+    background-color: #fff;
+}
+
+.cta1:hover img {
+    filter: invert(100%);
+}

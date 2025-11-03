@@ -1,0 +1,207 @@
+/* CSS Boiler Plate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* Section-1 */
+#section-1 {
+    height: 100%;
+    width: 100%;
+    padding: 0px 5%;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.navbar h1 {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.navbar h1 i {
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.navbar li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+.navbar button {
+    padding: 10px 18px;
+    border: 1px solid #222;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    background-color: transparent;
+}
+
+
+/* HeroSection */
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5% 0px;
+}
+
+.right img {
+    width: 350px;
+}
+
+.left h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.left {
+    width: 400px;
+}
+
+.left p {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ctaButton */
+.ctaButton {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: 1px solid #222;
+    background-color: #222;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* brandImages */
+.brandImages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brandImages img {
+    width: 100px;
+}
+
+
+/* Section-2 */
+#section-2 {
+    padding: 5%;
+}
+
+.serviceHeadPara {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.serviceHeadPara h1 {
+    font-weight: lighter;
+    font-size: 32px;
+    background-color: #B9FF66;
+}
+
+.serviceHeadPara p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* cardContainer */
+.cardContainer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+
+/* card */
+.card{
+    border: 2px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 8px 0px 0px #111;
+    -moz-box-shadow: 0px 8px 0px 0px  #111;
+    box-shadow: 0px 8px 0px 0px #111;
+}
+
+/* card and text */
+.cardContext h2{
+    font-size: 20px;
+    background-color: #B9FF66;
+    border-radius: 3px;
+}
+
+/* Icons and Text */
+.iconAndText{
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.iconAndText h4{
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconAndText h4 i{
+    background-color: #000000;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.card img{
+    width: 150px;
+    position: relative;
+    right: 20px;
+}
+
+#cardType2{
+    background-color: #111;
+    color: #ffff;
+}
+
+#cardType2 h2{
+    background-color: #ffff;
+    color: #111;
+}
