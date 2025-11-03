@@ -23,8 +23,8 @@ var tl = gsap.timeline({scrollTrigger : {
 
 
 tl.to("#fantaCan" , {
-    top : "120%",
-    left : "1%",
+    top : "140%",
+    left : "2.5%",
 },"ha");
 
 tl.to("#slice" , {
@@ -53,14 +53,14 @@ var tl2 = gsap.timeline({scrollTrigger : {
 }});
 
 tl2.to("#fantaCan" , {
-    top : "217%",
-    left : "31.5%",
+    top : "227%",
+    left : "36.8%",
     scale : 0.9,
 },"ca");
 
 tl2.to("#slice" , {
-    top : "208%",
-    left : "43.5%",
+    top : "220%",
+    left : "45.2%",
     scale : 1.2,
 },"ca");
 
